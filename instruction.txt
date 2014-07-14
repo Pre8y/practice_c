@@ -1,0 +1,9 @@
+1.create header .h file first, give function prototype with extern variable;
+2. create .c file for the same header file where you have to give funciton definition, don't forget to include "your.h" file. <> stands for system file while ""stand for local files.
+3.once done now you can use the methods of .h file in your main function file by including the .h file
+4. create object .o file for your_header_def.c then create object file for your main file
+	gcc -c -g header.c //generate header.o
+	gcc -c -g main.c //generate main.o
+5.Now link both of the object file
+	gcc -o main main.o header.o
+6. run the executable ./main
