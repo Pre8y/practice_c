@@ -7,3 +7,6 @@
 5.Now link both of the object file
 	gcc -o main main.o header.o
 6. run the executable ./main
+7. instead of creating each object file after change and linking it again by command line, makefile can be used to automate the build process
+8. first line of the make file should contain dependency for the final product usually your main file
+9. there are two parts fist dependency line, second the executable line any valid UNIX cmd
